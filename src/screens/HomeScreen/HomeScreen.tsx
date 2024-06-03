@@ -6,10 +6,12 @@ import RenameModal from "./components/RenameModal";
 import { useState } from "react";
 import Filters from "./components/Filters";
 import { useFilters } from "src/services/filters";
+import { useNavigate } from "react-router-dom";
 
 const fuseOptions = { keys: ["name"] };
 
 const HomeScreen = () => {
+  const navigate = useNavigate();
   const [renameOptions, setRenameOptions] = useState<{
     name: string;
     id: string;
@@ -49,6 +51,7 @@ const HomeScreen = () => {
                 onDuplicate={() => duplicatePhantom(phantom.id)}
                 onRemove={() => removePhantom(phantom.id)}
                 onRename={() => setRenameOptions(phantom)}
+                onClick={() => navigate(`phantoms/${phantom.id}`)}
               />
             ))}
           </div>

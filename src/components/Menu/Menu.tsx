@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { useRef } from "react";
-import useClickOutside from "../../utils/useClickOutside";
+import useClickOutside from "src/utils/useClickOutside";
 
 type MenuProps = {
   open: boolean;
