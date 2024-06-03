@@ -9,8 +9,8 @@ This project is a React application built with TypeScript. It showcases my skill
 - Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/yourprojectname.git
-cd yourprojectname
+git clone https://github.com/EastMeridian/phantom-buster.git
+cd phantom-buster
 ```
 
 - Install dependencies:
