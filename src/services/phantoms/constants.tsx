@@ -1,0 +1,1 @@
+export const PHANTOMS_STORAGE = "PHANTOMS_STORAGE";
